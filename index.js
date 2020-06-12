@@ -3,7 +3,9 @@ const { spawn } = require("child_process");
 
 try {
   const runner = spawn("pwd");
+
   // const runner = spawn("node", ["index.js"]);
+
   runner.stdout.on("data", (data) => {
     console.log(`stdout: ${data}`);
   });
