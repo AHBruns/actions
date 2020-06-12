@@ -2,7 +2,7 @@ const core = require("@actions/core");
 const { spawn } = require("child_process");
 
 try {
-  const runner = spawn("pwd");
+  const runner = spawn("ls", ["-l", "-a"]);
 
   // const runner = spawn("node", ["index.js"]);
 
